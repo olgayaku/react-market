@@ -1,0 +1,54 @@
+@import "./styles/colors.scss";
+
+.root {
+  .admin_card svg {
+    display: inline-block;
+    background-color: $base_color;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+.admin_main {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.admin_card {
+  background-color: #f1f1f1;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+  &:hover {
+    background-color: #c5c5c5;
+    transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+  }
+}
+
+.admin_card h3 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.admin_card p {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .admin_main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

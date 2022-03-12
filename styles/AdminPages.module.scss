@@ -1,0 +1,43 @@
+.mt_20 {
+  margin-top: 20px;
+}
+
+.mt_40 {
+  margin-top: 40px;
+}
+
+.trash {
+  color: #ff0001;
+}
+ 
+.userId, .productImage, .productCategorie, .orderId {
+  padding: 0 27px 27px 27px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(255, 255, 255, 0);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(255, 255, 255, 0);
+  box-shadow: 0px 2px 10px 0px rgba(255, 255, 255, 0);
+  margin-bottom: 17px;
+}
+
+.userId form div, .productImage form div, .productCategorie form div, .orderId form div {
+  margin-right: 15px;
+}
+
+.userId form div label, .productImage form div label, .productCategorie form div label, .orderId form div label {
+  font-weight: 500;
+  color: rgb(51, 55, 64);
+}
+
+.userId p, .productImage p, .productCategorie p, .orderId p {
+  font-weight: 700;
+}
+
+.userId button, .productImage button, .productCategorie button, .orderId button {
+  margin-right: 20px;
+  width: 100px;
+}
+
+.userId .role {
+  margin-bottom: 20px;
+}

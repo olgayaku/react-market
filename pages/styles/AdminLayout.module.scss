@@ -1,0 +1,54 @@
+@import "./styles/colors.scss";
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  a {
+    text-decoration: none;
+    color: #ff5d22;
+    font-size: 15px;
+    font-weight: 600;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  .navbar_logout {
+    color: #000;
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.navbar .navbar_admin {
+  color: $base-color;
+}
+
+.navbar_nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_items {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 991px) {
+  .navbar_items {
+    a {
+      padding-right: 20px;
+    }
+  }
+}

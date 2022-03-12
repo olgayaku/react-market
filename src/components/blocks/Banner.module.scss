@@ -1,0 +1,167 @@
+@import "./styles/colors.scss";
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.position_r {
+  position: relative;
+}
+
+.position_i {
+  position: initial;
+}
+
+.home_banner {
+  position: relative;
+  width: 100%;
+}
+
+.slider_banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #a7eefd;
+}
+
+.banner_bg_home {
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 95px;
+}
+
+.banner_content {
+  margin-bottom: 30px;
+}
+
+.banner_content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner_head {
+  font-size: 50px;
+  color: #1a1a1a;
+  padding-bottom: 10px;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}
+
+.banner_desc {
+  color: #363535;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.banner_head span {
+  font-weight: 300;
+}
+
+.banner_img {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.ceiling_lights {
+  position: absolute;
+  top: 0px;
+  right: -240px;
+}
+
+.pot {
+  position: absolute;
+  bottom: 100px;
+  right: -120px;
+}
+
+.banner_main_img {
+  margin: 0 auto;
+}
+
+@media (max-width: 1500px) {
+  .banner_img .ceiling_lights {
+    right: -50px;
+  }
+
+  .banner_img .ceiling_lights {
+    max-width: 200px;
+  }
+
+  .pot {
+    max-width: 140px;
+    bottom: 140px;
+    right: -30px;
+  }
+
+  .banner_main_img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1199px) {
+  .banner_bg_home {
+    height: 800px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .banner_head {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner_bg_home {
+    height: 600px;
+  }
+
+  .banner_img .ceiling_lights {
+    max-width: 120px;
+  }
+
+  .pot {
+    max-width: 100px;
+    bottom: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner_bg_home {
+    height: 550px;
+  }
+
+  .banner_content {
+    text-align: center;
+  }
+
+  .banner_head {
+    font-size: 30px;
+  }
+
+  .banner_img .ceiling_lights {
+    max-width: 90px;
+    right: -20px;
+  }
+
+  .pot {
+    max-width: 70px;
+    bottom: 70px;
+  }
+}

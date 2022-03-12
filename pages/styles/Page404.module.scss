@@ -1,0 +1,41 @@
+.root {
+  h2 {
+    margin: 0;
+    padding: 0;
+    color: #2d3031;
+    font-weight: 700;
+  }
+}
+
+.main_text {
+  color: #aaa;
+  font-size: 200px;
+  line-height: 200px;
+  font-weight: 700;
+}
+
+.pt_100 {
+  padding-top: 100px;
+}
+
+@media (max-width: 1199px) {
+  .pt_100 {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pt_100 {
+    padding-top: 65px;
+  }
+}
+@media (max-width: 767px) {
+  .main_text {
+  font-size: 120px;
+  line-height: 150px;
+}
+  .pt_100 {
+    padding-top: 40px;
+  }
+}
+

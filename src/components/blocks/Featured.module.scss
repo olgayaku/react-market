@@ -1,0 +1,133 @@
+@import "./styles/colors.scss";
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.featured_product_tab {
+  background: #fff;
+  text-align: center;
+  padding: 53px 30px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+  position: relative;
+  z-index: 1;
+}
+
+.navv {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navv a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.navv li:hover span{
+    color: #49d6f4;
+    text-decoration: none;
+}
+
+.featured_product_tab ul.nav_tabs {
+    border-bottom: unset;
+    justify-content: center;
+}
+
+.featured_product_tab ul li {
+    padding: 0px 45px;
+}
+
+.featured_product_tab ul li:first-child {
+    padding-left: 0;
+}
+
+.featured_product_tab ul li a {
+    display: block;
+}
+
+.featured_product_tab ul li a:hover img {
+    filter: invert(0) sepia(1) saturate(1) hue-rotate(
+175deg);
+}
+
+.featured_product_tab ul li img {
+    margin-bottom: 20px;
+    transition: all 400ms ease;
+}
+
+.featured_product_tab ul li span {
+    display: block;
+    color: #1a1a1a;
+    font-size: 18px;
+    transition: all 400ms ease;
+}
+
+
+@media (max-width: 1500px) {
+.featured_product_tab ul li {
+    padding: 0px 30px;
+}
+}
+
+@media (max-width: 1199px) {
+.featured_product_tab ul li {
+    padding: 0px 22px;
+}
+
+.featured_product_tab ul li span {
+    font-size: 16px;
+}
+}
+
+@media (max-width: 991px) {
+  .featured_product_tab {
+    padding: 30px 15px;
+  }
+
+  .featured_product_tab ul li {
+    padding: 0px 12px;
+    width: calc(100% / 6);
+}
+
+.featured_product_tab ul li span {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 767px) {
+  .featured_product_tab {
+    padding: 25px 0px 0px 0px;
+    margin-top: 30px;
+  }
+
+  .featured_product_tab ul.navv_tabs {
+    display: block;
+}
+
+.featured_product_tab ul li {
+    padding: 0px 30px !important;
+    width: unset;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.featured_product_tab ul li img {
+    margin-bottom: 10px;
+    max-height: 35px;
+}
+}

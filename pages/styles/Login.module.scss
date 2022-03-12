@@ -1,0 +1,100 @@
+.root {
+  label {
+    font-size: 14px;
+    color: #363535;
+  }
+  h2 {
+    font-size: 24px;
+    color: #363535;
+    margin-bottom: 30px;
+  }
+
+  span {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.login_btn_g {
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.link {
+  color: #49d6f4;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: #000;
+  }
+}
+.new_account {
+  margin-top: 20px;
+}
+.form_control {
+  font-size: 14px;
+  color: #999999;
+  height: 50px;
+  border-radius: 0;
+
+  &:focus {
+    border: 1px solid #ced4da;
+    box-shadow: 0 0 10px 1px #36353533;
+  }
+}
+.pt_100 {
+  padding-top: 100px;
+}
+.btn {
+  float: right;
+  padding: 10px 25px;
+}
+.newsletter {
+  padding-top: 100px;
+}
+.newsletter_inner {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f5f5f5;
+}
+.newsletter_title {
+  font-size: 40px;
+  color: #363535;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.newsletter_sub {
+  font-size: 16px;
+  color: #999999;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1199px) {
+  .pt_100 {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .pt_100 {
+    padding-top: 65px;
+  }
+}
+@media (max-width: 767px) {
+  .main_text {
+    font-size: 120px;
+    line-height: 150px;
+  }
+  .pt_100 {
+    padding-top: 40px;
+  }
+}

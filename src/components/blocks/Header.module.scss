@@ -1,0 +1,291 @@
+@import './styles/colors.scss';
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.menuClose {
+  display: flex;
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 28px;
+  right: 12px;
+  align-items: center;
+  cursor: pointer;
+
+  span {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      transform: rotate(-45deg);
+      transition: all 400ms ease;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      transition: all 400ms ease;
+      top: unset;
+      bottom: 9px;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.header {
+  background: transparent;
+  padding: 20px 0px;
+  position: fixed;
+  outline: none;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  transition: all 400ms ease;
+  background: #fff;
+}
+
+.burger_navbar {
+  padding-bottom: 20px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.302);
+}
+
+.navbar_brand {
+  display: flex;
+  outline: none;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.menu_icon {
+  text-align: right;
+  position: relative;
+  top: 5px;
+}
+
+.menu_icon > ul {
+  margin-bottom: 0;
+}
+
+.menu_icon > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu_icon > ul > li {
+  display: inline-block;
+  padding: 9px 20px;
+  position: relative;
+}
+
+.menu_icon > ul > .login:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background: #767676;
+}
+
+.menu_icon > ul > .logout:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background: #767676;
+}
+
+.menu_icon > ul > .cart_menu:before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background: #767676;
+}
+
+.menu_icon > ul > li > a {
+  top: 0;
+  position: relative;
+  display: block;
+}
+
+.menu_icon > ul > li.login > a span {
+  background-position: -5px -162px;
+}
+
+.logout_menu > ul > li.login > a span {
+  background-position: -10px -162px;
+}
+
+.menu_icon > ul > li.login:hover > a span {
+  background-position: -5px -205px;
+}
+
+.logout_menu > ul > li.login:hover > a span {
+  background-position: -10px -205px;
+}
+
+.menu_icon > ul > li.cart_menu > a span {
+  background-position: -9px -14px;
+}
+
+.menu_icon > ul > li.cart_menu:hover > a span {
+  background-position: -9px -52px;
+}
+
+.count_cart {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: $base-color;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+  position: absolute;
+  top: 2px;
+  right: 12px;
+}
+
+.menu_icon > ul > li > a span {
+  background: url(/assets/sprite.png) no-repeat scroll 0 0 transparent;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+
+.logout_menu> ul > li > a span {
+  background: url(/assets/spritelogout.png) no-repeat scroll 0 0 transparent;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+
+.menu_icon > ul > li:last-child {
+  padding-right: 0;
+}
+
+.menu_toggle {
+  width: 25px;
+  height: 16px;
+  position: relative;
+  top: -4px;
+  cursor: pointer;
+}
+
+.transition {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #363535;
+}
+
+.transition {
+  transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+
+.menu_toggle span:before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #363535;
+  transition: all 400ms ease-in-out;
+}
+
+.menu_toggle span:after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: #363535;
+  transition: all 400ms ease-in-out;
+}
+
+.menu_toggle:hover span {
+  width: 20px;
+}
+
+.menu_toggle:hover span:after {
+  width: 15px;
+}
+
+.menu_toggle:hover span, .menu_toggle:hover span:before, .menu_toggle:hover span:after {
+  background: #49d6f4;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 10px 0px;
+  }
+
+  .menu_icon > ul > li {
+    padding: 0px 3px;
+  }
+
+  .menu_icon > ul > .login:before {
+    top: 8px;
+  }
+
+  .menu_icon > ul > .cart_menu:before {
+    top: 8px;
+  }
+
+  .menu_icon > ul > li > a span {
+    transform: scale(0.8);
+  }
+
+  .menu_icon > ul > li:last-child {
+    padding-left: 10px;
+  }
+
+  .count_cart {
+    top: -6px;
+    right: 4px;
+  }
+}
+
+.mt_95 {
+  margin-top: 95px;
+}
+
+

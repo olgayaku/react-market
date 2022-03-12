@@ -1,0 +1,51 @@
+@import "./styles/colors.scss";
+
+.mb_30 {
+  margin-bottom: 30px;
+}
+
+.collapse_ul {
+  padding-left: 0;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}
+
+.sidebar_default {
+  border: 1px solid #e5e5e5;
+  padding: 20px 20px;
+}
+
+.cat_title {
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.open {
+  &:hover {
+    color: $base_color;
+    transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+  }
+
+  &:active {
+    color: $base_color;
+  }
+}
+
+.category li {
+  padding: 5px 0px;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .sidebar_default {
+    padding: 20px 20px;
+  }
+}

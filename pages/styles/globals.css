@@ -1,0 +1,59 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+ul, li, label, span {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.transition, a, input, button {
+  transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+  outline: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}
+
+.text_center {
+  text-align: center;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+}

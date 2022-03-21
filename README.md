@@ -1,4 +1,4 @@
-______________________________________הסבר עבור הפרוייקט ובסיס נתונים נמצאים בקבצים בנפרד______________________________________________
+______________________________________כל החומרים נמצאים בBRANCHE MASTER______________________________________________
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
